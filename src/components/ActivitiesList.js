@@ -5,7 +5,7 @@ import {activities} from "../utils/Costants";
 const ActivitiesList = () => {
     return (
         <div className='activitiesList'>
-            <section className='line'>
+            <section>
                 {activities.map((item, index) => <Activity activity={item} key={index}/>)}
             </section>
         </div>
