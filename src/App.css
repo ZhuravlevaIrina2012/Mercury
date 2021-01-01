@@ -1,38 +1,366 @@
-.App {
-  text-align: center;
+/*Top Menu*/
+.menu, .leftMenu, .rightMenu, .avatar {
+    display: flex;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.leftMenu {
+    padding-left: 40px;
+    width: 80px;
+    justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rightMenu {
+    padding-right: 40px;
+    width: 440px;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.openMenu {
+    width: calc(100vw - 315px);
 }
 
-.App-link {
-  color: #61dafb;
+.fullScreen {
+    width: 100vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topMenu {
+    background-color: white;
+    border-bottom: 1px solid #8492af;
+    height: 119px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addProject {
+    background-color: #5584ff;
+    border: none;
+    border-radius: 24px;
+    height: 48px;
+    width: 178px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification {
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.circle {
+    z-index: 20;
+    position: absolute;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    background-color: #5584ff;
+    border: 2px solid white;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bell {
+    z-index: 10;
+    position: relative;
+    left: -15px;
+    top: 5px;
+}
+
+.foto {
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+}
+
+.triangleDown {
+    padding-left: 10px;
+}
+
+
+/*Side Menu*/
+
+.sideMenu {
+    width: 315px;
+    height: 1350px;
+    background-color: #0e1a35;
+}
+
+.logoBlock {
+    height: 119px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(11, 10, 16, 0.2);
+    padding-right: 40px;
+}
+
+.logo {
+    width: 185px;
+    padding-left: 50px;
+}
+
+.menuIcon {
+    width: 20px;
+    padding: 0 10px 0 40px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(11, 10, 16, 0.2);
+}
+
+.nav-item:hover {
+    background-color: #122143;
+    border-left: 10px solid #5584ff;
+}
+
+/*Home*/
+
+.home {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 500;
+    padding: 50px 0 0 40px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #8492af;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.block {
+    background-color: white;
+    border: 1px solid #8492af;
+    height: 430px;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sales {
+    margin-right: 30px;
+}
+
+.period {
+    height: 40px;
+    width: 190px;
+    border: 1px solid rgba(132, 146, 175, 0.3);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+label {
+    margin-right: 5px;
+    color: #8492af;
+}
+
+select {
+    border: none;
+    width: 100px;
+}
+
+.statistic {
+    max-width: 100%;
+}
+
+.chart {
+    max-width: 90%;
+}
+
+/*Tasks*/
+
+.blueCircle, .pinkCircle {
+    width: 45px;
+    height: 45px;
+    border-radius: 23px;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blueCircle {
+    background-color: #5384ff;
+}
+
+.pinkCircle {
+    background-color: #f83c7b;
+    margin-left: 15px;
+}
+
+.smallHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.circles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.label {
+    width: 55px;
+    height: 55px;
+    border-radius: 28px;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5384ff;
+    margin-right: 25px;
+}
+
+.tasks, .messages, .activities {
+    height: auto;
+}
+
+.task, .message, .activity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 32px;
+    height: 50px;
+}
+
+.task {
+    justify-content: space-between;
+    border-top: 1px solid rgba(132, 146, 175, 0.3);
+}
+
+.info {
+    display: inline;
+}
+
+.delay {
+    color: #f83c7b;
+}
+
+.left {
+    color: #8492af;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.days {
+    justify-content: left;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.days p {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.leftPart {
+    display: flex;
+    align-items: center;
+}
+
+.more {
+    margin-left: 25px;
+}
+
+/*Messages*/
+.messages {
+    margin: 0 30px;
+}
+
+.message {
+    justify-content: left;
+    border-top: 1px solid rgba(132, 146, 175, 0.3);
+}
+
+.isRead {
+    background-color: rgba(218, 222, 231, 0.3);
+}
+
+.name, .textMessage, .message .left {
+    font-size: 14px;
+}
+
+.name {
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.info .row {
+    justify-content: left;
+}
+
+.textMessage {
+    margin: 5px 0;
+}
+
+/*Activity*/
+.activities .smallHeader {
+    border-bottom: 1px solid rgba(132, 146, 175, 0.3);
+}
+
+.activity .row {
+    align-items: center;
 }
