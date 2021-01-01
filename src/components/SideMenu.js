@@ -15,13 +15,36 @@ const SideMenu = () => {
                 <img className="logo" src={logo} alt="Mercury"/>
             </div>
             <nav className="nav">
-                <Link to={'/home'} className="nav-item"><img className="menuIcon" src={home} alt="Home"/>Home</Link>
-                <Link to={'/workflow'} className="nav-item"><img className="menuIcon" src={workflow} alt="Workflow"/>Workflow</Link>
-                <Link to={'/statistics'} className="nav-item"><img className="menuIcon" src={statistics}
-                                                                   alt="Statistics"/>Statistics</Link>
-                <Link to={'calendar'} className="nav-item"><img className="menuIcon" src={calendar} alt="Calendar"/>Calendar</Link>
-                <Link to={'/users'} className="nav-item"><img className="menuIcon" src={users} alt="Users"/>Users</Link>
-                <Link to={'/settings'} className="nav-item"><img className="menuIcon" src={settings} alt="Settings"/>Settings</Link>
+                <Link to={'/home'} className="nav-item">
+                    <div className='line'/>
+                    <img className="menuIcon" src={home} alt="Home"/>
+                    Home
+                </Link>
+                <Link to={'/workflow'} className="nav-item">
+                    <div className='line'/>
+                    <img className="menuIcon" src={workflow} alt="Workflow"/>
+                    Workflow
+                </Link>
+                <Link to={'/statistics'} className="nav-item">
+                    <div className='line'/>
+                    <img className="menuIcon" src={statistics} alt="Statistics"/>
+                    Statistics
+                </Link>
+                <Link to={'calendar'} className="nav-item">
+                    <div className='line'/>
+                    <img className="menuIcon" src={calendar} alt="Calendar"/>
+                    Calendar
+                </Link>
+                <Link to={'/users'} className="nav-item">
+                    <div className='line'/>
+                    <img className="menuIcon" src={users} alt="Users"/>
+                    Users
+                </Link>
+                <Link to={'/settings'} className="nav-item">
+                    <div className='line'/>
+                    <img className="menuIcon" src={settings} alt="Settings"/>
+                    Settings
+                </Link>
             </nav>
         </div>
     );

@@ -118,6 +118,7 @@
 }
 
 .nav-item {
+    position: relative;
     font-size: 24px;
     font-weight: 500;
     text-decoration: none;
@@ -125,10 +126,21 @@
     padding: 20px 0;
     border-bottom: 2px solid rgba(11, 10, 16, 0.2);
 }
+.line {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: #5584ff;
+    margin-top: -20px;
+    display: none;
+}
 
 .nav-item:hover {
     background-color: #122143;
-    border-left: 10px solid #5584ff;
+}
+
+.nav-item:hover .line{
+    display: block;
 }
 
 /*Home*/
